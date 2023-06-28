@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        tools:context=".Uploading"
+        android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/house_img"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></ImageView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/address_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Address Details:"
+                    android:textColor="#4169e1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tv1_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_details"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"
+                    android:text="City : " />
+
+                <TextView
+                    android:id="@+id/tv1_city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_details"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:hint="city name" />
+
+                <TextView
+                    android:id="@+id/tv2_landmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1_city"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="Landmark : " />
+
+                <TextView
+                    android:id="@+id/tv2_landmark_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1_city"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:hint="landmark name" />
+
+                <TextView
+                    android:id="@+id/tv3_street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_landmark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="Street : " />
+
+                <TextView
+                    android:id="@+id/tv3_street_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_landmark"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:hint="street name" />
+
+                <TextView
+                    android:id="@+id/tv4_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3_street"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="District : " />
+
+                <TextView
+                    android:id="@+id/tv4_district_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3_street"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:hint="district name" />
+
+
+                <TextView
+                    android:id="@+id/tv5_pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv4_district"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:text="Pincode : " />
+
+                <TextView
+                    android:id="@+id/tv5_pincode_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv4_district"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    android:hint="enter your city pincode" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Availabale For"
+                    android:textColor="#4169e1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_availabe_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bachelor , Family and Students"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="17dp"
+                    ></TextView>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/property_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Property Details:"
+                    android:textColor="#4169e1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tv1_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/property_details"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" Rent : "
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv1_rent_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/property_details"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="$rent amount"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv2_advance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1_rent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" Advance : "
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv2_advance_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1_rent_amount"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="advance amount"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv3_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_advance"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" Owner name : "
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv3_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_advance_amount"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="owner name"
+                    android:textSize="17dp" />
+
+
+                <TextView
+                    android:id="@+id/tv5_house_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3_owner"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" House Type :"
+                    android:textSize="17dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv5_flat_or_apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3_owner"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Flat or Individual"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv6_owner_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv5_house_type"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Contact number:"
+                    android:textSize="17dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv6_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv5_flat_or_apartment"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="1234567890"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Property Discription"
+                android:textColor="#4169e1"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tv_property_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="extra details about house"
+                android:textSize="17dp"
+                ></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+

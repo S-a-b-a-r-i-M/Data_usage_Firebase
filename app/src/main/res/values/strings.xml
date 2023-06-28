@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">House Rental</string>
+    <string name="log_in">Log In</string>
+    <string name="new_user_let_s_sign_up">New User? Let\'s Sign Up</string>
+    <string name="enter_your_password">enter your password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fullname">FullName</string>
+    <string name="set_password">set password</string>
+    <string name="enter_email_address">enter email address</string>
+</resources>
